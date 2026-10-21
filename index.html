@@ -121,23 +121,23 @@ button:disabled{opacity:.6;cursor:wait}
 <header class="top">
   <div class="kicker">Jozef Gergo · finančný konzultant · životné poistenie</div>
   <h1>Zdravotný dotazník</h1>
-  <p class="lead">Potrebujem ho, aby som ti pripravil návrh poistenia správne hneď na prvýkrát. Vyplň ho sám/sama, pravdivo a úplne. Pri každej diagnóze sa rozbalia doplňujúce otázky – práve tie sa poisťovňa pýta.</p>
+  <p class="lead">Slúži na prípravu návrhu životného poistenia tak, aby bol správny hneď na prvýkrát. Prosím, vyplňte ho sami, pravdivo a úplne. Pri každej diagnóze sa rozbalia doplňujúce otázky – presne tie, ktoré kladie poisťovňa.</p>
 </header>
 
 <div class="progress noprint" aria-live="polite"><span id="pgtxt">Vyplnené 0 %</span><div class="bar"><i id="pgbar"></i></div><span id="autosave" class="small">Rozpracované sa ukladá v tomto prehliadači.</span></div>
 
 <section class="sekcia noprint" id="s-uvod">
   <ol class="steps">
-    <li>Odpovedz na otázky. Pri „Áno“ sa rozbalia podrobnosti.</li>
-    <li>Odfoť lekárske správy, ak nejaké máš.</li>
-    <li>Stlač Odoslať.</li>
+    <li>Odpovedzte na otázky. Pri „Áno“ sa rozbalia podrobnosti.</li>
+    <li>Odfoťte lekárske správy, ak nejaké máte.</li>
+    <li>Stlačte Odoslať.</li>
   </ol>
-  <p class="small">Trvá 10 – 25 minút. Nemusíš to dokončiť naraz – rozpracované zostane uložené v tomto prehliadači. Ak si niečo nepamätáš presne, napíš odhad.</p>
+  <p class="small">Trvá 10 – 25 minút. Nemusíte to dokončiť naraz – rozpracované zostane uložené v tomto prehliadači. Ak si niečo nepamätáte presne, uveďte odhad.</p>
   <p class="small"><b>Prečo pravdivo:</b> poisťovňa si zdravotný stav overuje v zdravotnej dokumentácii. Čo sa zamlčí, môže pri poistnej udalosti znamenať, že neplní.</p>
 </section>
 
 <section class="sekcia" id="s-zakladne">
-  <div class="shead"><span class="num">1</span><div><h2>Základné údaje</h2><div class="sub">Rodné číslo ani číslo dokladu sem nepíš – vyplní sa až do zmluvy.</div></div></div>
+  <div class="shead"><span class="num">1</span><div><h2>Základné údaje</h2><div class="sub">Rodné číslo ani číslo dokladu sem neuvádzajte – doplnia sa až do zmluvy.</div></div></div>
   <div class="grid">
     <div class="q"><label class="lbl" for="z_meno">Meno a priezvisko</label><input type="text" id="z_meno" data-label="Meno a priezvisko" autocomplete="name"></div>
     <div class="q"><label class="lbl" for="z_dn">Dátum narodenia</label><input type="date" id="z_dn" data-label="Dátum narodenia"></div>
@@ -160,12 +160,12 @@ button:disabled{opacity:.6;cursor:wait}
       <label><input type="radio" name="z_pz" value="v domácnosti" id="z_pz9">v domácnosti</label>
     </div></div>
   <div class="grid">
-    <div class="q"><label class="lbl" for="z_pov">Povolanie – čo konkrétne robíš<span class="hint">napr. „elektrikár na stavbách“, „účtovníčka v kancelárii“, „vodič kamiónu – medzinárodná doprava“. Pri materskej uveď posledné povolanie.</span></label><input type="text" id="z_pov" data-label="Povolanie"></div>
+    <div class="q"><label class="lbl" for="z_pov">Povolanie – čo konkrétne robíte<span class="hint">napr. „elektrikár na stavbách“, „účtovníčka v kancelárii“, „vodič kamiónu – medzinárodná doprava“. Pri materskej uveďte posledné povolanie.</span></label><input type="text" id="z_pov" data-label="Povolanie"></div>
     <div class="q"><span class="lbl">Charakter práce</span><div class="opts" data-label="Charakter práce"><label><input type="radio" name="z_char" value="prevažne kancelárska" id="z_char1">prevažne kancelárska</label><label><input type="radio" name="z_char" value="kombinovaná" id="z_char2">kombinovaná</label><label><input type="radio" name="z_char" value="manuálna" id="z_char3">manuálna</label><label><input type="radio" name="z_char" value="vo výškach / s rizikom" id="z_char4">vo výškach, s chemikáliami, strojmi, zbraňou</label></div></div>
   </div>
   <div class="grid">
     <div class="q"><label class="lbl" for="z_vl">Všeobecný (praktický) lekár<span class="hint">meno a mesto ambulancie</span></label><input type="text" id="z_vl" data-label="Všeobecný lekár"></div>
-    <div class="q"><label class="lbl" for="z_ol">Odborní lekári, u ktorých si sledovaný/á za posledné 3 roky<span class="hint">odbornosť, mesto, dôvod, posledná návšteva</span></label><textarea id="z_ol" data-label="Odborní lekári (3 roky)"></textarea></div>
+    <div class="q"><label class="lbl" for="z_ol">Odborní lekári, u ktorých ste sledovaný/á za posledné 3 roky<span class="hint">odbornosť, mesto, dôvod, posledná návšteva</span></label><textarea id="z_ol" data-label="Odborní lekári (3 roky)"></textarea></div>
   </div>
 </section>
 
@@ -175,19 +175,19 @@ button:disabled{opacity:.6;cursor:wait}
 </section>
 
 <section class="sekcia" id="s-vseobecne">
-  <div class="shead"><span class="num">3</span><div><h2>Všeobecné otázky o zdraví</h2><div class="sub">Ak odpovieš „Áno“, rozbalia sa podrobnosti.</div></div></div>
+  <div class="shead"><span class="num">3</span><div><h2>Všeobecné otázky o zdraví</h2><div class="sub">Ak odpoviete „Áno“, rozbalia sa podrobnosti.</div></div></div>
   <div id="vseobecne"></div>
 </section>
 
 <section class="sekcia" id="s-ochorenia">
-  <div class="shead"><span class="num">4</span><div><h2>Ochorenia podľa orgánových systémov</h2><div class="sub">Pri každej skupine označ, či si mal/a alebo máš niektoré z ochorení. Potom zaškrtni konkrétnu diagnózu a vyplň doplňujúce otázky.</div></div></div>
-  <div class="note"><b>Čo uvádzať:</b> každé ochorenie, pre ktoré si bol/a vyšetrený/á, liečený/á, sledovaný/á, hospitalizovaný/á alebo na PN – aj keď je už vyliečené. Bežné jednorazové veci (chrípka, angína, prechladnutie, jednoduchá zlomenina bez následkov, tehotenstvo bez komplikácií, dioptrie do ±8) uvádzať netreba, ak prebehli bez následkov a bez trvalej liečby. Pri pochybnostiach radšej uveď.</div>
+  <div class="shead"><span class="num">4</span><div><h2>Ochorenia podľa orgánových systémov</h2><div class="sub">Pri každej skupine označte, či ste mali alebo máte niektoré z ochorení. Potom zaškrtnite konkrétnu diagnózu a vyplňte doplňujúce otázky.</div></div></div>
+  <div class="note"><b>Čo uvádzať:</b> každé ochorenie, pre ktoré ste boli vyšetrený/á, liečený/á, sledovaný/á, hospitalizovaný/á alebo na PN – aj keď je už vyliečené. Bežné jednorazové veci (chrípka, angína, prechladnutie, jednoduchá zlomenina bez následkov, tehotenstvo bez komplikácií, dioptrie do ±8) uvádzať netreba, ak prebehli bez následkov a bez trvalej liečby. Pri pochybnostiach ho radšej uveďte.</div>
   <div id="ochorenia"></div>
 </section>
 
 <section class="sekcia" id="s-lieky">
   <div class="shead"><span class="num">5</span><div><h2>Pravidelne užívané lieky</h2><div class="sub">Vrátane hormonálnej antikoncepcie, liekov na tlak, cholesterol, štítnu žľazu, alergie, psychiku.</div></div></div>
-  <div class="q"><span class="lbl">Užívaš alebo si v posledných 2 rokoch pravidelne užíval/a lieky?</span>
+  <div class="q"><span class="lbl">Užívate alebo ste v posledných 2 rokoch pravidelne užívali lieky?</span>
     <div class="opts yn" data-label="Pravidelné lieky"><label><input type="radio" name="l_uziva" value="Áno" data-toggle="l_tab" data-when="Áno" id="l_uziva_a">Áno</label><label><input type="radio" name="l_uziva" value="Nie" data-toggle="l_tab" data-when="Áno" id="l_uziva_n">Nie</label></div></div>
   <div id="l_tab" class="det" hidden>
     <table class="lieky" id="liekyTab"><thead><tr><th>Názov lieku</th><th>Na čo</th><th>Dávkovanie</th><th>Od kedy (rok)</th><th class="noprint"></th></tr></thead><tbody></tbody></table>
@@ -196,7 +196,7 @@ button:disabled{opacity:.6;cursor:wait}
 </section>
 
 <section class="sekcia" id="s-prilohy">
-  <div class="shead"><span class="num">6</span><div><h2>Lekárske správy</h2><div class="sub">Podľa toho, čo si uviedol/a, potrebujem k návrhu tieto dokumenty. Odfoť ich mobilom alebo nahraj súbor.</div></div></div>
+  <div class="shead"><span class="num">6</span><div><h2>Lekárske správy</h2><div class="sub">Podľa toho, čo ste uviedli, budem k návrhu potrebovať tieto dokumenty. Odfoťte ich mobilom alebo nahrajte súbor.</div></div></div>
   <ul class="poz" id="poz"></ul>
   <div class="tools noprint">
     <button type="button" class="sec" id="btnFoto">Odfotiť iný dokument</button>
@@ -204,13 +204,13 @@ button:disabled{opacity:.6;cursor:wait}
     <input type="file" id="fFoto" accept="image/*" capture="environment" hidden>
     <input type="file" id="fFile" accept="image/*,application/pdf" multiple hidden>
   </div>
-  <p class="small noprint">Fotku rob pri dobrom svetle, celú stranu, text čitateľný. Viac strán = viac fotiek. Ak správu nemáš, nevadí – pošli, čo máš, zvyšok doriešime spolu.</p>
+  <p class="small noprint">Fotografujte pri dobrom svetle, celú stranu, text čitateľný. Viac strán = viac fotiek. Ak správu nemáte, nevadí – pošlite, čo máte, zvyšok doriešime spolu.</p>
   <div id="prilohy" class="prilohy"></div>
 </section>
 
 <section class="sekcia" id="s-zaver">
   <div class="shead"><span class="num">7</span><div><h2>Odoslanie</h2></div></div>
-  <div class="q"><label class="lbl" for="v_pozn">Čokoľvek ďalšie, čo by som mal o tvojom zdraví vedieť<span class="hint">napr. plánované vyšetrenia, čakanie na výsledky, ťažkosti bez diagnózy, čo ti už iná poisťovňa vylúčila</span></label><textarea id="v_pozn" data-label="Ďalšie poznámky"></textarea></div>
+  <div class="q"><label class="lbl" for="v_pozn">Čokoľvek ďalšie, čo by som mal o Vašom zdravotnom stave vedieť<span class="hint">napr. plánované vyšetrenia, čakanie na výsledky, ťažkosti bez diagnózy, čo Vám už iná poisťovňa vylúčila</span></label><textarea id="v_pozn" data-label="Ďalšie poznámky"></textarea></div>
   <label class="chk"><input type="checkbox" id="v_pravda" data-label="Vyhlásenie o pravdivosti"><span>Vyhlasujem, že som odpovedal/a pravdivo a úplne a nič som nezamlčal/a. Beriem na vedomie, že poisťovňa môže zdravotný stav overiť v zdravotnej dokumentácii a že nepravdivé alebo neúplné údaje môžu viesť k odmietnutiu poistného plnenia alebo k odstúpeniu od zmluvy.</span></label>
   <label class="chk"><input type="checkbox" id="v_gdpr" data-label="Súhlas so spracovaním pre prípravu návrhu"><span>Súhlasím, aby môj finančný konzultant Jozef Gergo tieto údaje a priložené dokumenty použil na prípravu návrhu poistenia a odovzdal ich poisťovni, ktorú si vyberiem. Údaje o zdraví sú osobitnou kategóriou osobných údajov; nikomu inému sa neposielajú a môžem požiadať o ich vymazanie.</span></label>
   <input type="hidden" id="v_datum" data-label="Dátum vyplnenia">
@@ -221,10 +221,10 @@ button:disabled{opacity:.6;cursor:wait}
   <div class="status" id="status" aria-live="polite"></div>
   <div id="hotovo" class="hotovo" hidden>
     <h3>Odoslané. Ďakujem.</h3>
-    <p>Dotazník aj prílohy mám. Ozvem sa ti s návrhom. Ak si na niečo spomenieš dodatočne, stačí mi napísať alebo zavolať.</p>
+    <p>Dotazník aj prílohy som dostal. Ozvem sa Vám s návrhom. Ak si na niečo spomeniete dodatočne, stačí mi napísať alebo zavolať.</p>
     <p class="small" id="hotovoKontakt"></p>
   </div>
-  <div id="fallback" class="note noprint" hidden>Táto kópia dotazníka nie je napojená na odosielanie. Tlačidlo „Odoslať“ uloží súbor s odpoveďami do tvojho zariadenia – pošli mi ho prosím e-mailom na <b id="kEmail"></b>.</div>
+  <div id="fallback" class="note noprint" hidden>Táto kópia dotazníka nie je napojená na odosielanie. Tlačidlo „Odoslať“ uloží súbor s odpoveďami do Vášho zariadenia – pošlite mi ho prosím e-mailom na <b id="kEmail"></b>.</div>
 </section>
 
 <section class="sekcia noprint" id="s-konzultant" hidden>
@@ -270,42 +270,42 @@ function field(def, p){
 
 /* ====== 2. Životný štýl ====== */
 const STYL = [
-  {id:'nikotin', t:'yn', l:'Užil/a si za posledných 24 mesiacov nikotín v akejkoľvek forme?', h:'cigarety, e-cigarety, IQOS, cigary, fajka, žuvací/šnupací tabak, nikotínové vrecúška alebo náplasti', d:[
+  {id:'nikotin', t:'yn', l:'Užili ste za posledných 24 mesiacov nikotín v akejkoľvek forme?', h:'cigarety, e-cigarety, IQOS, cigary, fajka, žuvací/šnupací tabak, nikotínové vrecúška alebo náplasti', d:[
     {id:'forma', t:'check', l:'Forma', o:['cigarety','e-cigareta / vape','zahrievaný tabak (IQOS, glo)','nikotínové vrecúška','cigary / fajka','náplasti, žuvačky','iné']},
     {id:'mnoz', t:'text', l:'Množstvo za deň', ph:'napr. 10 cigariet'},
-    {id:'odkedy', t:'text', l:'Od kedy fajčíš (rok)'},
-    {id:'prestal', t:'text', l:'Ak si prestal/a – kedy (mesiac/rok)'}]},
+    {id:'odkedy', t:'text', l:'Od kedy fajčíte (rok)'},
+    {id:'prestal', t:'text', l:'Ak ste prestali – kedy (mesiac/rok)'}]},
   {id:'alkohol', t:'radio', l:'Alkohol', o:['nepijem','príležitostne (do 2 dcl vína / 1 piva denne alebo menej)','pravidelne každý deň','viac ako 3 jednotky denne']},
-  {id:'alk_lie', t:'yn', l:'Liečil/a si sa alebo ti bola odporučená liečba zo závislosti (alkohol, drogy, lieky, hráčstvo)?', d:[{id:'kedy', t:'text', l:'Kedy a kde'},{id:'stav', t:'text', l:'Aktuálny stav (abstinencia od kedy)'}]},
-  {id:'drogy', t:'yn', l:'Užil/a si niekedy návykové látky (drogy, psychofarmaká bez predpisu)?', d:[{id:'co', t:'text', l:'Aké, ako často, kedy naposledy'}]},
-  {id:'sport', t:'yn', l:'Venuješ sa pravidelne športu?', d:[
+  {id:'alk_lie', t:'yn', l:'Liečili ste sa alebo Vám bola odporučená liečba zo závislosti (alkohol, drogy, lieky, hráčstvo)?', d:[{id:'kedy', t:'text', l:'Kedy a kde'},{id:'stav', t:'text', l:'Aktuálny stav (abstinencia od kedy)'}]},
+  {id:'drogy', t:'yn', l:'Užili ste niekedy návykové látky (drogy, psychofarmaká bez predpisu)?', d:[{id:'co', t:'text', l:'Aké, ako často, kedy naposledy'}]},
+  {id:'sport', t:'yn', l:'Venujete sa pravidelne športu?', d:[
     {id:'aky', t:'text', l:'Aký šport (všetky)'},
     {id:'uroven', t:'radio', l:'Úroveň', o:['rekreačne','registrovaný v klube','regionálne súťaže','celoštátne / medzinárodné súťaže','profesionálne']},
     {id:'freq', t:'text', l:'Ako často (hodín týždenne)'}]},
-  {id:'rizik', t:'yn', l:'Vykonávaš rizikové aktivity?', h:'potápanie, horolezectvo, skialpinizmus, paragliding, zoskoky, motošport, bojové športy, lietanie, rýchlostné lyžovanie, lov, práca so zbraňou…', d:[
+  {id:'rizik', t:'yn', l:'Vykonávate rizikové aktivity?', h:'potápanie, horolezectvo, skialpinizmus, paragliding, zoskoky, motošport, bojové športy, lietanie, rýchlostné lyžovanie, lov, práca so zbraňou…', d:[
     {id:'ake', t:'text', l:'Aké'},
     {id:'ako', t:'text', l:'Ako často a na akej úrovni', ph:'napr. potápanie 2× ročne do 20 m, s licenciou'}]},
-  {id:'zahr', t:'yn', l:'Plánuješ dlhodobý pobyt alebo prácu v zahraničí (nad 3 mesiace) alebo pracuješ v rizikovej krajine?', d:[{id:'kde', t:'text', l:'Kde a na ako dlho'}]},
+  {id:'zahr', t:'yn', l:'Plánujete dlhodobý pobyt alebo prácu v zahraničí (nad 3 mesiace) alebo pracujete v rizikovej krajine?', d:[{id:'kde', t:'text', l:'Kde a na ako dlho'}]},
 ];
 
 /* ====== 3. Všeobecné otázky ====== */
 const VSEOBECNE = [
-  {id:'pn', t:'yn', l:'Si v súčasnosti práceneschopný/á?', d:[{id:'od', t:'text', l:'Od kedy'},{id:'dovod', t:'text', l:'Dôvod (diagnóza)'},{id:'koniec', t:'text', l:'Predpokladané ukončenie'}]},
-  {id:'pn5', t:'yn', l:'Bol/a si za posledných 5 rokov na PN dlhšie ako 4 týždne vcelku?', d:[{id:'zoz', t:'area', l:'Kedy, ako dlho a z akého dôvodu', h:'každú PN samostatne'}]},
-  {id:'invalid', t:'yn', l:'Máš alebo mal/a si priznaný invalidný dôchodok, alebo si o neho žiadal/a?', d:[{id:'pct', t:'text', l:'Percento poklesu schopnosti pracovať'},{id:'od', t:'text', l:'Od kedy'},{id:'dg', t:'text', l:'Pre akú diagnózu'},{id:'stav', t:'radio', l:'Stav', o:['priznaný – trvá','priznaný – odobratý','zamietnutý','v konaní']}]},
-  {id:'ztp', t:'yn', l:'Máš preukaz ŤZP alebo iné zdravotné obmedzenie uznané úradom?', d:[{id:'dovod', t:'text', l:'Dôvod'}]},
-  {id:'sled', t:'yn', l:'Si v súčasnosti dlhodobo sledovaný/á alebo liečený/á pre nejaké ochorenie alebo úraz?', h:'podrobnosti vyplníš v časti 4, tu stačí vymenovať', d:[{id:'co', t:'text', l:'Pre čo (diagnózy)'}]},
-  {id:'vys6', t:'yn', l:'Absolvoval/a si za posledných 12 mesiacov vyšetrenie – krv, moč, EKG, ultrazvuk, röntgen, CT, MRI, biopsiu, endoskopiu, genetické testy, onkomarkery?', d:[{id:'ake', t:'area', l:'Aké vyšetrenie, kedy, dôvod a výsledok', h:'ak bol výsledok v norme, napíš „v norme“'}]},
-  {id:'vysnep', t:'yn', l:'Bol u teba niekedy zistený nepriaznivý (abnormálny) výsledok takéhoto vyšetrenia?', d:[{id:'ake', t:'area', l:'Aké vyšetrenie, kedy, čo zistilo a čo nasledovalo'}]},
-  {id:'plan', t:'yn', l:'Čakáš na výsledky vyšetrení, alebo máš naplánované / odporučené vyšetrenie, zákrok, operáciu či hospitalizáciu?', d:[{id:'co', t:'area', l:'Čo, kedy a prečo'}]},
-  {id:'hosp', t:'yn', l:'Bol/a si za posledných 5 rokov hospitalizovaný/á (aj jednodňovo)?', d:[{id:'zoz', t:'area', l:'Rok, nemocnica, dôvod a dĺžka', h:'každú hospitalizáciu samostatne; ak máš prepúšťaciu správu, prilož ju'}]},
-  {id:'oper', t:'yn', l:'Bol/a si niekedy operovaný/á (okrem slepého čreva a mandlí), alebo ti bola operácia odporučená?', d:[{id:'zoz', t:'area', l:'Aká operácia, rok, dôvod, výsledok / následky'}]},
-  {id:'uraz', t:'yn', l:'Utrpel/a si za posledných 5 rokov úraz, pre ktorý si bol/a ošetrený/á lekárom?', d:[{id:'zoz', t:'area', l:'Aký úraz, kedy, strana tela, liečba, PN a či zostali následky'}]},
-  {id:'onko', t:'yn', l:'Podstúpil/a si niekedy chemoterapiu, ožarovanie, biologickú alebo hormonálnu onkologickú liečbu?', d:[{id:'co', t:'area', l:'Pre čo, kedy, ukončenie liečby'}]},
-  {id:'hiv', t:'yn', l:'Bol ti vykonaný test na HIV s pozitívnym výsledkom, alebo máš hepatitídu B alebo C?', d:[{id:'co', t:'text', l:'Podrobnosti'}]},
-  {id:'rodina', t:'yn', l:'Vyskytlo sa u biologických rodičov alebo súrodencov pred 60. rokom veku: infarkt, mozgová príhoda, cukrovka, rakovina, vysoký tlak, polycystické obličky, Parkinson, Alzheimer, Huntington, skleróza multiplex, schizofrénia, dedičné ochorenie?', d:[{id:'zoz', t:'area', l:'Kto (vzťah), aké ochorenie, vek pri zistení, prípadne vek úmrtia', h:'napr. otec – infarkt v 52 r., žije; matka – rakovina prsníka v 48 r.'}]},
-  {id:'odmiet', t:'yn', l:'Odmietla ťa niektorá poisťovňa poistiť, prijala ťa s prirážkou alebo výlukou, alebo ti zmluvu vypovedala?', d:[{id:'co', t:'text', l:'Ktorá poisťovňa, kedy, z akého dôvodu'}]},
-  {id:'teh', t:'yn', l:'Si tehotná? (len ženy)', d:[{id:'tyz', t:'text', l:'Týždeň tehotenstva'},{id:'kompl', t:'text', l:'Komplikácie (tlak, cukrovka, rizikové tehotenstvo)'},{id:'pred', t:'text', l:'Komplikácie v predchádzajúcich tehotenstvách'}]},
+  {id:'pn', t:'yn', l:'Ste v súčasnosti práceneschopný/á?', d:[{id:'od', t:'text', l:'Od kedy'},{id:'dovod', t:'text', l:'Dôvod (diagnóza)'},{id:'koniec', t:'text', l:'Predpokladané ukončenie'}]},
+  {id:'pn5', t:'yn', l:'Boli ste za posledných 5 rokov na PN dlhšie ako 4 týždne vcelku?', d:[{id:'zoz', t:'area', l:'Kedy, ako dlho a z akého dôvodu', h:'každú PN samostatne'}]},
+  {id:'invalid', t:'yn', l:'Máte alebo mali ste priznaný invalidný dôchodok, alebo ste oň žiadali?', d:[{id:'pct', t:'text', l:'Percento poklesu schopnosti pracovať'},{id:'od', t:'text', l:'Od kedy'},{id:'dg', t:'text', l:'Pre akú diagnózu'},{id:'stav', t:'radio', l:'Stav', o:['priznaný – trvá','priznaný – odobratý','zamietnutý','v konaní']}]},
+  {id:'ztp', t:'yn', l:'Máte preukaz ŤZP alebo iné zdravotné obmedzenie uznané úradom?', d:[{id:'dovod', t:'text', l:'Dôvod'}]},
+  {id:'sled', t:'yn', l:'Ste v súčasnosti dlhodobo sledovaný/á alebo liečený/á pre nejaké ochorenie alebo úraz?', h:'podrobnosti vyplníte v časti 4, tu stačí vymenovať', d:[{id:'co', t:'text', l:'Pre čo (diagnózy)'}]},
+  {id:'vys6', t:'yn', l:'Absolvovali ste za posledných 12 mesiacov vyšetrenie – krv, moč, EKG, ultrazvuk, röntgen, CT, MRI, biopsiu, endoskopiu, genetické testy, onkomarkery?', d:[{id:'ake', t:'area', l:'Aké vyšetrenie, kedy, dôvod a výsledok', h:'ak bol výsledok v norme, napíšte „v norme“'}]},
+  {id:'vysnep', t:'yn', l:'Bol u Vás niekedy zistený nepriaznivý (abnormálny) výsledok takéhoto vyšetrenia?', d:[{id:'ake', t:'area', l:'Aké vyšetrenie, kedy, čo zistilo a čo nasledovalo'}]},
+  {id:'plan', t:'yn', l:'Čakáte na výsledky vyšetrení, alebo máte naplánované / odporučené vyšetrenie, zákrok, operáciu či hospitalizáciu?', d:[{id:'co', t:'area', l:'Čo, kedy a prečo'}]},
+  {id:'hosp', t:'yn', l:'Boli ste za posledných 5 rokov hospitalizovaný/á (aj jednodňovo)?', d:[{id:'zoz', t:'area', l:'Rok, nemocnica, dôvod a dĺžka', h:'každú hospitalizáciu samostatne; ak máte prepúšťaciu správu, priložte ju'}]},
+  {id:'oper', t:'yn', l:'Boli ste niekedy operovaný/á (okrem slepého čreva a mandlí), alebo Vám bola operácia odporučená?', d:[{id:'zoz', t:'area', l:'Aká operácia, rok, dôvod, výsledok / následky'}]},
+  {id:'uraz', t:'yn', l:'Utrpeli ste za posledných 5 rokov úraz, pre ktorý ste boli ošetrený/á lekárom?', d:[{id:'zoz', t:'area', l:'Aký úraz, kedy, strana tela, liečba, PN a či zostali následky'}]},
+  {id:'onko', t:'yn', l:'Podstúpili ste niekedy chemoterapiu, ožarovanie, biologickú alebo hormonálnu onkologickú liečbu?', d:[{id:'co', t:'area', l:'Pre čo, kedy, ukončenie liečby'}]},
+  {id:'hiv', t:'yn', l:'Bol Vám vykonaný test na HIV s pozitívnym výsledkom, alebo máte hepatitídu B alebo C?', d:[{id:'co', t:'text', l:'Podrobnosti'}]},
+  {id:'rodina', t:'yn', l:'Vyskytlo sa u Vašich biologických rodičov alebo súrodencov pred 60. rokom veku: infarkt, mozgová príhoda, cukrovka, rakovina, vysoký tlak, polycystické obličky, Parkinson, Alzheimer, Huntington, skleróza multiplex, schizofrénia, dedičné ochorenie?', d:[{id:'zoz', t:'area', l:'Kto (vzťah), aké ochorenie, vek pri zistení, prípadne vek úmrtia', h:'napr. otec – infarkt v 52 r., žije; matka – rakovina prsníka v 48 r.'}]},
+  {id:'odmiet', t:'yn', l:'Odmietla Vás niektorá poisťovňa poistiť, prijala Vás s prirážkou alebo výlukou, alebo Vám zmluvu vypovedala?', d:[{id:'co', t:'text', l:'Ktorá poisťovňa, kedy, z akého dôvodu'}]},
+  {id:'teh', t:'yn', l:'Ste tehotná? (len ženy)', d:[{id:'tyz', t:'text', l:'Týždeň tehotenstva'},{id:'kompl', t:'text', l:'Komplikácie (tlak, cukrovka, rizikové tehotenstvo)'},{id:'pred', t:'text', l:'Komplikácie v predchádzajúcich tehotenstvách'}]},
 ];
 
 /* ====== 4. Ochorenia – všeobecné doplňujúce otázky ku každej diagnóze ====== */
@@ -318,7 +318,7 @@ function GEN_POST(){ return [
   {id:'liecba_p', t:'text', l:'Lieky / zákrok – názov a od kedy', ph:'napr. Prestarium 5 mg od 2021'},
   {id:'oper', t:'radio', l:'Operácia alebo zákrok', o:['nebola','ambulantne','s hospitalizáciou','odporučená, ešte nebola']},
   {id:'oper_p', t:'text', l:'Aký zákrok a kedy'},
-  {id:'sled', t:'radio', l:'Si sledovaný/á lekárom?', o:['nie','praktický lekár','špecialista – pravidelne','špecialista – sledovanie ukončené']},
+  {id:'sled', t:'radio', l:'Ste sledovaný/á lekárom?', o:['nie','praktický lekár','špecialista – pravidelne','špecialista – sledovanie ukončené']},
   {id:'sled_p', t:'text', l:'Ktorý špecialista a posledná návšteva (mesiac/rok)'},
   {id:'pn', t:'radio', l:'PN kvôli tomuto ochoreniu', o:['nie','áno, do 4 týždňov','áno, dlhšie']},
   {id:'pn_p', t:'text', l:'Kedy a ako dlho'},
@@ -338,14 +338,14 @@ const KATEGORIE = [
     {id:'komp', t:'check', l:'Zistené postihnutie orgánov', o:['nie','srdce (hypertrofia)','obličky','oči','cievy']},
     {id:'ekg', t:'text', l:'Posledné EKG / echo srdca (kedy, výsledok)'}]},
   {id:'arytmia', n:'Porucha srdcového rytmu, búšenie srdca', x:[
-    {id:'typ', t:'text', l:'Typ arytmie (ak vieš)', ph:'fibrilácia predsiení, extrasystoly, SVT…'},
+    {id:'typ', t:'text', l:'Typ arytmie (ak viete)', ph:'fibrilácia predsiení, extrasystoly, SVT…'},
     {id:'holter', t:'text', l:'Holter / EKG – kedy a výsledok'},
     {id:'zakrok', t:'check', l:'Zákroky', o:['žiadne','ablácia','kardiostimulátor','ICD','kardioverzia']},
-    {id:'riedenie', t:'radio', l:'Užívaš lieky na riedenie krvi?', o:['nie','áno']}]},
+    {id:'riedenie', t:'radio', l:'Užívate lieky na riedenie krvi?', o:['nie','áno']}]},
   {id:'ichs', n:'Infarkt, angína pectoris, ischemická choroba srdca', x:[
     {id:'kedy', t:'text', l:'Dátum infarktu / stanovenia diagnózy'},
     {id:'zakrok', t:'check', l:'Zákroky', o:['koronarografia','stent (koľko)','bypass','žiadny']},
-    {id:'ef', t:'text', l:'Ejekčná frakcia (EF) z posledného echa, ak vieš'},
+    {id:'ef', t:'text', l:'Ejekčná frakcia (EF) z posledného echa, ak viete'},
     {id:'taz', t:'radio', l:'Bolesti na hrudi alebo dýchavičnosť teraz', o:['nie','pri väčšej námahe','pri bežnej činnosti','v pokoji']}]},
   {id:'vada', n:'Srdcová vada, šelest, kardiomyopatia, zápal srdca', x:[
     {id:'typ', t:'text', l:'Presný názov vady (vrodená / získaná)'},
@@ -362,7 +362,7 @@ const KATEGORIE = [
     {id:'taz', t:'check', l:'Ťažkosti', o:['bez ťažkostí','bolesti / ťažoba','opuchy','zápal žíl','kožné zmeny','vred predkolenia']},
     {id:'oper', t:'radio', l:'Operácia', o:['nebola','ambulantný zákrok (laser, skleroterapia, pena)','klasická operácia s hospitalizáciou','odporučená']},
     {id:'oper_kedy', t:'text', l:'Kedy a na ktorej nohe'},
-    {id:'kompr', t:'radio', l:'Nosíš kompresné pančuchy / užívaš venofarmaká?', o:['nie','áno']}]},
+    {id:'kompr', t:'radio', l:'Nosíte kompresné pančuchy / užívate venofarmaká?', o:['nie','áno']}]},
   {id:'cievy', n:'Iné cievne ochorenie (aneuryzma, upchatie tepien, Raynaud…)', x:[{id:'co', t:'text', l:'Presný názov'}]},
   {id:'ine', n:'Iné ochorenie srdca alebo ciev', x:[{id:'co', t:'text', l:'Aké'}]},
  ]},
@@ -375,7 +375,7 @@ const KATEGORIE = [
     {id:'kortik', t:'radio', l:'Systémové kortikoidy (tablety Prednison / Medrol, injekcie) pre astmu', o:['nikdy','raz za posledných 5 rokov','opakovane','trvalo']},
     {id:'kortik_kedy', t:'text', l:'Kedy naposledy'},
     {id:'pohot', t:'radio', l:'Pohotovosť alebo hospitalizácia pre astmu', o:['nikdy','do 5 rokov','v posledných 2 rokoch']},
-    {id:'spiro', t:'text', l:'Spirometria – kedy a výsledok (ak vieš, FEV1 v %)'},
+    {id:'spiro', t:'text', l:'Spirometria – kedy a výsledok (ak viete, FEV1 v %)'},
     {id:'pn', t:'text', l:'PN pre astmu – kedy a ako dlho'}]},
   {id:'chochp', n:'Chronická bronchitída, CHOCHP, rozedma', x:[{id:'spiro', t:'text', l:'Spirometria – kedy a výsledok'},{id:'kysl', t:'radio', l:'Domáca oxygenoterapia?', o:['nie','áno']},{id:'exac', t:'text', l:'Zhoršenia s antibiotikami / kortikoidmi za posledný rok (koľko)'}]},
   {id:'apnoe', n:'Spánkové apnoe', x:[{id:'ahi', t:'text', l:'Výsledok spánkového vyšetrenia (AHI), kedy'},{id:'cpap', t:'radio', l:'Liečba', o:['bez liečby','CPAP pravidelne','CPAP nepravidelne','operácia','iná']},{id:'spavost', t:'radio', l:'Denná spavosť pretrváva?', o:['nie','áno']}]},
@@ -406,7 +406,7 @@ const KATEGORIE = [
  {id:'oblicky', n:'Obličky, močové cesty, pohlavné orgány, prsník', ex:'obličkové kamene, opakované zápaly, bielkovina alebo krv v moči, zníženie funkcie obličiek, prostata, semenníky, maternica, vaječníky, endometrióza, cysty, prsník', dg:[
   {id:'kamene', n:'Obličkové / močové kamene', x:[{id:'kolko', t:'text', l:'Koľkokrát a kedy naposledy'},{id:'zakrok', t:'check', l:'Zákrok', o:['vyšli samé','drvenie (litotripsia)','operácia / endoskopia','žiadny']}]},
   {id:'zapaly', n:'Opakované zápaly obličiek alebo močového mechúra', x:[{id:'kolko', t:'text', l:'Koľkokrát za rok, posledný kedy'},{id:'pricina', t:'text', l:'Zistená príčina (reflux, vrodená vada…)'}]},
-  {id:'moc', n:'Bielkovina alebo krv v moči, znížená funkcia obličiek, glomerulonefritída', x:[{id:'nalez', t:'text', l:'Nález a kedy'},{id:'krea', t:'text', l:'Posledný kreatinín / GFR, ak vieš'},{id:'nefro', t:'radio', l:'Sledovaný nefrológom', o:['nie','áno']},{id:'biopsia', t:'text', l:'Biopsia obličky – kedy a výsledok'}]},
+  {id:'moc', n:'Bielkovina alebo krv v moči, znížená funkcia obličiek, glomerulonefritída', x:[{id:'nalez', t:'text', l:'Nález a kedy'},{id:'krea', t:'text', l:'Posledný kreatinín / GFR, ak viete'},{id:'nefro', t:'radio', l:'Sledovaný nefrológom', o:['nie','áno']},{id:'biopsia', t:'text', l:'Biopsia obličky – kedy a výsledok'}]},
   {id:'vada', n:'Vrodená vada obličiek, jedna oblička, cysty obličiek', x:[{id:'co', t:'text', l:'Aká'}]},
   {id:'prostata', n:'Prostata (zväčšenie, zápal, zvýšené PSA)', x:[{id:'psa', t:'text', l:'Posledné PSA – kedy a hodnota'},{id:'biopsia', t:'text', l:'Biopsia – kedy a výsledok'}]},
   {id:'muz', n:'Semenníky, iné mužské pohlavné orgány', x:[{id:'co', t:'text', l:'Aké ochorenie'}]},
@@ -414,7 +414,7 @@ const KATEGORIE = [
     {id:'co', t:'text', l:'Presný názov'},
     {id:'ster', t:'text', l:'Posledný cytologický ster – kedy a výsledok'},
     {id:'zakrok', t:'text', l:'Zákroky (konizácia, kyretáž, laparoskopia…) – aký a kedy'},
-    {id:'sled', t:'text', l:'Ako často si sledovaná a posledná kontrola'}]},
+    {id:'sled', t:'text', l:'Ako často ste sledovaná a posledná kontrola'}]},
   {id:'prsnik', n:'Prsník (cysta, fibroadenóm, mastopatia, abnormálny nález)', x:[{id:'nalez', t:'text', l:'Nález, kedy'},{id:'vys', t:'text', l:'Ultrazvuk / mamografia / biopsia – kedy a výsledok'}]},
   {id:'ine', n:'Iné ochorenie obličiek, močových ciest alebo pohlavných orgánov', x:[{id:'co', t:'text', l:'Aké'}]},
  ]},
@@ -447,7 +447,7 @@ const KATEGORIE = [
   {id:'alergia', n:'Alergie', x:[
     {id:'na', t:'check', l:'Na čo', o:['pele','roztoče, prach','zvieratá','potraviny','hmyz (včela, osa)','lieky','iné']},
     {id:'prejav', t:'check', l:'Prejavy', o:['nádcha, oči','kožné','astma','opuch (angioedém)','anafylaktický šok']},
-    {id:'adren', t:'radio', l:'Máš predpísané adrenalínové pero (EpiPen)?', o:['nie','áno']},
+    {id:'adren', t:'radio', l:'Máte predpísané adrenalínové pero (EpiPen)?', o:['nie','áno']},
     {id:'liecba', t:'text', l:'Liečba (antihistaminiká, vakcinácia – imunoterapia)'}]},
   {id:'autoim', n:'Autoimunitné ochorenie (lupus, sklerodermia, Sjögren, vaskulitída, sarkoidóza, imunodeficiencia…)', x:[{id:'co', t:'text', l:'Presný názov'},{id:'liecba', t:'check', l:'Liečba', o:['žiadna','kortikoidy','imunosupresíva','biologická']},{id:'organy', t:'text', l:'Postihnuté orgány'}]},
   {id:'infekcia', n:'Infekčné ochorenie (borelióza, mononukleóza, meningitída, malária, toxoplazmóza, covid s následkami…)', x:[{id:'co', t:'text', l:'Aké a kedy'},{id:'liecba', t:'text', l:'Liečba a dĺžka'},{id:'nasl', t:'radio', l:'Pretrvávajú ťažkosti', o:['nie','áno']}]},
@@ -481,9 +481,9 @@ const KATEGORIE = [
     {id:'liecba', t:'check', l:'Liečba', o:['lieky podľa potreby','rehabilitácia','obstreky / infúzie','operácia','kúpele','žiadna']},
     {id:'oper', t:'text', l:'Operácia chrbtice – aká, kedy, výsledok'},
     {id:'pn', t:'text', l:'PN pre chrbticu za posledných 5 rokov – kedy, ako dlho'},
-    {id:'praca', t:'radio', l:'Obmedzuje ťa v práci?', o:['nie','čiastočne','áno']}]},
+    {id:'praca', t:'radio', l:'Obmedzuje Vás v práci?', o:['nie','čiastočne','áno']}]},
   {id:'skolioza', n:'Skolióza, iná deformita chrbtice', x:[{id:'stupen', t:'text', l:'Stupeň (uhol), korzet / operácia'}]},
-  {id:'artroza', n:'Artróza', x:[{id:'klb', t:'text', l:'Ktorý kĺb (strana)'},{id:'stupen', t:'text', l:'Stupeň podľa RTG, ak vieš'},{id:'endo', t:'text', l:'Endoprotéza (umelý kĺb) – ktorý, kedy, alebo plánovaná'}]},
+  {id:'artroza', n:'Artróza', x:[{id:'klb', t:'text', l:'Ktorý kĺb (strana)'},{id:'stupen', t:'text', l:'Stupeň podľa RTG, ak viete'},{id:'endo', t:'text', l:'Endoprotéza (umelý kĺb) – ktorý, kedy, alebo plánovaná'}]},
   {id:'reuma', n:'Reumatoidná artritída, Bechterevova choroba, psoriatická artritída, iný zápalový reumatizmus', x:[
     {id:'co', t:'text', l:'Presná diagnóza'},
     {id:'liecba', t:'check', l:'Liečba', o:['nesteroidné antireumatiká','metotrexát / sulfasalazín','kortikoidy','biologická liečba','žiadna']},
@@ -501,7 +501,7 @@ const KATEGORIE = [
  ]},
  {id:'neuro', n:'Nervový systém', ex:'epilepsia, kŕče, migréna, závraty, mŕtvica, TIA, skleróza multiplex, ochrnutie, neuropatia, Parkinson, otras mozgu, mdloby, tras', dg:[
   {id:'epilepsia', n:'Epilepsia, epileptický záchvat, kŕče (aj v detstve)', x:[
-    {id:'typ', t:'text', l:'Typ záchvatov (ak vieš)'},
+    {id:'typ', t:'text', l:'Typ záchvatov (ak viete)'},
     {id:'prvy', t:'text', l:'Prvý záchvat – kedy'},
     {id:'posl', t:'text', l:'Posledný záchvat – kedy'},
     {id:'freq', t:'radio', l:'Frekvencia za posledné 2 roky', o:['žiadny','1 – 2','viac']},
@@ -521,7 +521,7 @@ const KATEGORIE = [
     {id:'kedy', t:'text', l:'Diagnostikovaná kedy'},
     {id:'forma', t:'radio', l:'Forma', o:['relaps-remitujúca','primárne progresívna','sekundárne progresívna','klinicky izolovaný syndróm']},
     {id:'ataky', t:'text', l:'Počet atakov za posledné 2 roky'},
-    {id:'edss', t:'text', l:'EDSS skóre (ak vieš)'},
+    {id:'edss', t:'text', l:'EDSS skóre (ak viete)'},
     {id:'liek', t:'text', l:'Liečba (ktorý liek, od kedy)'}]},
   {id:'neuropat', n:'Neuropatia, poruchy citlivosti, ochrnutie, tras, poruchy hybnosti', x:[{id:'co', t:'text', l:'Presný názov a časť tela'},{id:'pricina', t:'text', l:'Príčina'}]},
   {id:'otras', n:'Otras mozgu, úraz hlavy s bezvedomím', x:[{id:'kolko', t:'text', l:'Koľkokrát, kedy, dĺžka bezvedomia'},{id:'nasl', t:'radio', l:'Pretrvávajúce ťažkosti', o:['nie','áno']}]},
@@ -538,7 +538,7 @@ const KATEGORIE = [
   {id:'ppp', n:'Porucha príjmu potravy', x:[]},
   {id:'ptsd', n:'Posttraumatická porucha, iná psychická diagnóza', x:[{id:'co', t:'text', l:'Aká'}]},
  ], pre:[
-    {id:'kto', t:'radio', l:'Kto ťa liečil / lieči', o:['nikto, bez liečby','praktický lekár','psychológ / psychoterapeut','psychiater']},
+    {id:'kto', t:'radio', l:'Kto Vás liečil / lieči', o:['nikto, bez liečby','praktický lekár','psychológ / psychoterapeut','psychiater']},
     {id:'trvanie', t:'text', l:'Obdobie ťažkostí – od kedy do kedy'},
     {id:'epiz', t:'radio', l:'Počet epizód', o:['jedna','dve','tri a viac','trvalé']},
     {id:'liek', t:'text', l:'Lieky (antidepresíva, anxiolytiká, hypnotiká) – názov, od kedy do kedy'},
@@ -596,7 +596,7 @@ document.getElementById('ochorenia').innerHTML = KATEGORIE.map(k=>{
   }).join('');
   return `<div class="q catq"><span class="lbl">${esc(k.n)}</span><span class="hint">${esc(k.ex)}</span>
     <div class="opts yn" data-label="${esc(k.n)}" style="margin-top:.4rem"><label><input type="radio" name="${kid}" id="${kid}_a" value="Áno" data-toggle="${kid}_d" data-when="Áno">Áno</label><label><input type="radio" name="${kid}" id="${kid}_n" value="Nie" data-toggle="${kid}_d" data-when="Áno">Nie</label></div>
-    <div class="det" id="${kid}_d" hidden><div class="small">Zaškrtni všetko, čo sa ťa týka:</div>${list}${boxes}</div></div>`;
+    <div class="det" id="${kid}_d" hidden><div class="small">Zaškrtnite všetko, čo sa Vás týka:</div>${list}${boxes}</div></div>`;
 }).join('');
 
 /* lieky */
@@ -656,7 +656,7 @@ function missing(){
   if(!document.querySelector('input[name="s_alkohol"]:checked')) miss.push('Alkohol');
   requiredGroups().forEach(n=>{ if(!document.querySelector(`input[name="${n}"]:checked`)){ const lbl=document.querySelector(`input[name="${n}"]`).closest('.q').querySelector('.lbl'); miss.push(lbl.firstChild.textContent.trim()); } });
   /* kategória Áno bez zaškrtnutej diagnózy */
-  KATEGORIE.forEach(k=>{ const kid=`o_${k.id}`; const a=document.getElementById(`${kid}_a`); if(a.checked && !document.querySelector(`input[data-cat="${kid}"]:checked`)) miss.push(`${k.n} – zaškrtni konkrétnu diagnózu`); });
+  KATEGORIE.forEach(k=>{ const kid=`o_${k.id}`; const a=document.getElementById(`${kid}_a`); if(a.checked && !document.querySelector(`input[data-cat="${kid}"]:checked`)) miss.push(`${k.n} – zaškrtnite konkrétnu diagnózu`); });
   if(!document.getElementById('v_pravda').checked) miss.push('Vyhlásenie o pravdivosti');
   return miss;
 }
@@ -715,12 +715,12 @@ function pozadovane(){
   if(yes('v_invalid')) out.push({k:'Invalidný dôchodok', t:'Rozhodnutie Sociálnej poisťovne a posudok'});
   if(yes('v_onko')) out.push({k:'Onkologická liečba', t:'Záverečná správa z onkológie a posledná kontrola'});
   if(yes('v_pn')) out.push({k:'Aktuálna PN', t:'Správa od lekára k súčasnej PN'});
-  if(yes('l_uziva')) out.push({k:'Lieky', t:'Stačí fotka receptov alebo krabičiek, ak si nevieš spomenúť na názvy'});
+  if(yes('l_uziva')) out.push({k:'Lieky', t:'Stačí fotka receptov alebo krabičiek, ak si neviete spomenúť na názvy'});
   return out;
 }
 function renderPoz(){
   const ul=document.getElementById('poz'); const list=pozadovane();
-  if(!list.length){ ul.innerHTML='<li><div class="pt"><b>Zatiaľ nič konkrétne</b><span>Podľa tvojich odpovedí nepotrebujem žiadnu správu. Ak nejakú máš, môžeš ju pridať nižšie.</span></div></li>'; return; }
+  if(!list.length){ ul.innerHTML='<li><div class="pt"><b>Zatiaľ nič konkrétne</b><span>Podľa Vašich odpovedí nepotrebujem žiadnu správu. Ak nejakú máte, môžete ju pridať nižšie.</span></div></li>'; return; }
   ul.innerHTML = list.map((x,i)=>{ const has=PRILOHY.some(p=>p.k===x.k); return `<li class="${has?'ok':''}"><div class="pt"><b>${esc(x.k)}</b><span>${esc(x.t)}</span></div><button type="button" class="noprint" data-foto="${esc(x.k)}">Odfotiť</button><button type="button" class="sec noprint" data-file="${esc(x.k)}">Nahrať</button></li>`; }).join('');
   ul.querySelectorAll('[data-foto]').forEach(b=>b.onclick=()=>{ UPLOAD_TAG=b.dataset.foto; document.getElementById('fFoto').click(); });
   ul.querySelectorAll('[data-file]').forEach(b=>b.onclick=()=>{ UPLOAD_TAG=b.dataset.file; document.getElementById('fFile').click(); });
@@ -738,7 +738,7 @@ async function addFiles(list, tag){
     try{
       let p; if(f.type==='application/pdf') p=await readPdf(f); else if(f.type.startsWith('image/')) p=await resizeImage(f); else { status(`Súbor ${f.name} preskočený – podporované sú fotky a PDF.`); continue; }
       p.size=b64size(p.b64); const total=PRILOHY.reduce((a,x)=>a+x.size,0)+p.size;
-      if(total>MAX_TOTAL){ status('Prílohy sú spolu príliš veľké. Odstráň niektorú alebo ju pošli neskôr samostatne.'); continue; }
+      if(total>MAX_TOTAL){ status('Prílohy sú spolu príliš veľké. Odstráňte niektorú alebo ju pošlite neskôr samostatne.'); continue; }
       if(tag){ p.k=tag; const n=PRILOHY.filter(x=>x.k===tag).length+1; p.name=tag.replace(/[\\\/:*?"<>|]/g,'')+' '+n+(p.type==='application/pdf'?'.pdf':'.jpg'); }
       PRILOHY.push(p);
     }catch(e){ status(`Súbor ${f.name} sa nepodarilo pridať.`); }
@@ -764,20 +764,20 @@ function doneUI(){ document.getElementById('hotovo').hidden=false; document.getE
 document.getElementById('btnSend').onclick = ()=>{
   const m=missing();
   if(m.length){ status('Ešte chýba: '+m.join('; ')); return; }
-  if(!document.getElementById('v_gdpr').checked){ status('Zaškrtni prosím aj súhlas so spracovaním údajov.'); return; }
+  if(!document.getElementById('v_gdpr').checked){ status('Zaškrtnite prosím aj súhlas so spracovaním údajov.'); return; }
   const btn=document.getElementById('btnSend'); btn.disabled=true;
   const p=payload();
   if(ONLINE){
-    status('Odosielam… pri fotkách to môže trvať aj minútu, nechaj stránku otvorenú.');
+    status('Odosielam… pri fotkách to môže trvať aj minútu, nechajte stránku otvorenú.');
     fetch(KONZULTANT.url, { method:'POST', headers:{'Content-Type':'text/plain;charset=utf-8'}, body: JSON.stringify(p), redirect:'follow' })
       .then(r=>r.json())
-      .then(r=>{ btn.disabled=false; if(r&&r.ok) doneUI(); else status('Odoslanie sa nepodarilo: '+(r&&r.error||'neznáma chyba')+'. Skús znova.'); })
-      .catch(err=>{ btn.disabled=false; status('Odoslanie sa nepodarilo ('+(err&&err.message||err)+'). Skontroluj internet a skús znova, prípadne s menším počtom fotiek.'); });
+      .then(r=>{ btn.disabled=false; if(r&&r.ok) doneUI(); else status('Odoslanie sa nepodarilo: '+(r&&r.error||'neznáma chyba')+'. Skúste znova.'); })
+      .catch(err=>{ btn.disabled=false; status('Odoslanie sa nepodarilo ('+(err&&err.message||err)+'). Skontrolujte internet a skúste znova, prípadne s menším počtom fotiek.'); });
   } else {
     const meno=(p.meno||'klient').normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-zA-Z0-9]+/g,'-').toLowerCase();
     const name=`zdravotny-dotaznik-${meno}-${new Date().toISOString().slice(0,10)}.json`;
     const blob=new Blob([JSON.stringify(p)],{type:'application/json'}); const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=name; document.body.appendChild(a); a.click(); a.remove();
-    btn.disabled=false; status(`Súbor ${name} je uložený v tvojom zariadení – pošli mi ho e-mailom na ${KONZULTANT.email}.`);
+    btn.disabled=false; status(`Súbor ${name} je uložený vo Vašom zariadení – pošlite mi ho e-mailom na ${KONZULTANT.email}.`);
   }
 };
 document.getElementById('btnPdf').onclick = ()=>{ window.print(); };
