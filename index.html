@@ -138,6 +138,16 @@ button:disabled{opacity:.6;cursor:wait}
 
 <section class="sekcia" id="s-zakladne">
   <div class="shead"><span class="num">1</span><div><h2>Základné údaje</h2><div class="sub">Rodné číslo ani číslo dokladu sem neuvádzajte – doplnia sa až do zmluvy.</div></div></div>
+  <div class="q"><span class="lbl">Pre koľko osôb sa poistenie dojednáva?<span class="hint">Každá poistená osoba vypĺňa vlastný dotazník. Za dieťa ho vyplní rodič.</span></span>
+    <div class="opts" data-label="Počet poistených"><label><input type="radio" name="z_pocet" value="len ja" id="z_pocet1" data-toggle="z_rodina_d" data-when="viac osôb">len ja</label><label><input type="radio" name="z_pocet" value="viac osôb" id="z_pocet2" data-toggle="z_rodina_d" data-when="viac osôb">viac osôb (rodina, partneri)</label></div></div>
+  <div class="det" id="z_rodina_d" hidden>
+    <div class="grid">
+      <div class="q"><label class="lbl" for="z_rodina">Meno a priezvisko poistníka<span class="hint">osoba, na ktorú bude zmluva – rovnaké pri všetkých dotazníkoch tejto zmluvy</span></label><input type="text" id="z_rodina" data-label="Poistník (zmluva)"></div>
+      <div class="q"><label class="lbl" for="z_osoba">Tento dotazník vypĺňa poistená osoba č.</label><select id="z_osoba" data-label="Poradie osoby"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option></select></div>
+      <div class="q"><label class="lbl" for="z_vztah">Vzťah k poistníkovi</label><select id="z_vztah" data-label="Vzťah k poistníkovi"><option value="">–</option><option>som poistník</option><option>manžel/ka, partner/ka</option><option>dieťa</option><option>rodič</option><option>iný</option></select></div>
+    </div>
+    <p class="small">Po odoslaní tohto dotazníka sa ponúkne možnosť vyplniť ďalší za ďalšiu osobu.</p>
+  </div>
   <div class="grid">
     <div class="q"><label class="lbl" for="z_meno">Meno a priezvisko</label><input type="text" id="z_meno" data-label="Meno a priezvisko" autocomplete="name"></div>
     <div class="q"><label class="lbl" for="z_dn">Dátum narodenia</label><input type="date" id="z_dn" data-label="Dátum narodenia"></div>
@@ -223,6 +233,7 @@ button:disabled{opacity:.6;cursor:wait}
     <h3>Odoslané. Ďakujem.</h3>
     <p>Dotazník aj prílohy som dostal. Ozvem sa Vám s návrhom. Ak si na niečo spomeniete dodatočne, stačí mi napísať alebo zavolať.</p>
     <p class="small" id="hotovoKontakt"></p>
+    <div class="tools noprint" id="dalsiBox" hidden><button type="button" id="btnDalsi">Vyplniť dotazník za ďalšiu osobu</button></div>
   </div>
   <div id="fallback" class="note noprint" hidden>Táto kópia dotazníka nie je napojená na odosielanie. Tlačidlo „Odoslať“ uloží súbor s odpoveďami do Vášho zariadenia – pošlite mi ho prosím e-mailom na <b id="kEmail"></b>.</div>
 </section>
@@ -652,6 +663,8 @@ function missing(){
   const miss=[];
   ['z_meno','z_dn','z_vyska','z_vaha','z_pov'].forEach(id=>{ const el=document.getElementById(id); if(!el.value) miss.push(el.closest('.q').querySelector('.lbl').firstChild.textContent.trim()); });
   if(!document.querySelector('input[name="z_pohl"]:checked')) miss.push('Pohlavie');
+  if(!document.querySelector('input[name="z_pocet"]:checked')) miss.push('Pre koľko osôb sa poistenie dojednáva');
+  if(document.getElementById('z_pocet2').checked && !document.getElementById('z_rodina').value.trim()) miss.push('Meno poistníka');
   if(!document.querySelector('input[name="z_pz"]:checked')) miss.push('Pracovné postavenie');
   if(!document.querySelector('input[name="s_alkohol"]:checked')) miss.push('Alkohol');
   requiredGroups().forEach(n=>{ if(!document.querySelector(`input[name="${n}"]:checked`)){ const lbl=document.querySelector(`input[name="${n}"]`).closest('.q').querySelector('.lbl'); miss.push(lbl.firstChild.textContent.trim()); } });
@@ -758,8 +771,8 @@ if(!ONLINE){ document.getElementById('fallback').hidden=false; document.getEleme
 document.getElementById('kEmail').textContent = KONZULTANT.email;
 document.getElementById('hotovoKontakt').textContent = KONZULTANT.meno + (KONZULTANT.tel?` · ${KONZULTANT.tel}`:'') + ` · ${KONZULTANT.email}`;
 
-function payload(){ document.getElementById('v_datum').value=new Date().toISOString().slice(0,10); const d=collect(); const s=summary(); return { meno: document.getElementById('z_meno').value.trim(), data:d, suhrn:s, prilohy:PRILOHY.map(p=>({name:p.name,type:p.type,b64:p.b64})) }; }
-function doneUI(){ document.getElementById('hotovo').hidden=false; document.getElementById('btnSend').hidden=true; status(''); try{localStorage.removeItem(LSKEY);}catch(e){} document.getElementById('hotovo').scrollIntoView({behavior:'smooth'}); }
+function payload(){ document.getElementById('v_datum').value=new Date().toISOString().slice(0,10); const d=collect(); const s=summary(); const viac=document.getElementById('z_pocet2').checked; return { meno: document.getElementById('z_meno').value.trim(), rodina: viac?document.getElementById('z_rodina').value.trim():'', osoba: viac?document.getElementById('z_osoba').value:'', data:d, suhrn:s, prilohy:PRILOHY.map(p=>({name:p.name,type:p.type,b64:p.b64})) }; }
+function doneUI(){ document.getElementById('hotovo').hidden=false; document.getElementById('dalsiBox').hidden=!document.getElementById('z_pocet2').checked; document.getElementById('btnSend').hidden=true; status(''); try{localStorage.removeItem(LSKEY);}catch(e){} document.getElementById('hotovo').scrollIntoView({behavior:'smooth'}); }
 
 document.getElementById('btnSend').onclick = ()=>{
   const m=missing();
@@ -779,6 +792,15 @@ document.getElementById('btnSend').onclick = ()=>{
     const blob=new Blob([JSON.stringify(p)],{type:'application/json'}); const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=name; document.body.appendChild(a); a.click(); a.remove();
     btn.disabled=false; status(`Súbor ${name} je uložený vo Vašom zariadení – pošlite mi ho e-mailom na ${KONZULTANT.email}.`);
   }
+};
+document.getElementById('btnDalsi').onclick = ()=>{
+  const rodina=document.getElementById('z_rodina').value, osoba=Math.min(6, (+document.getElementById('z_osoba').value||1)+1);
+  try{localStorage.removeItem(LSKEY);}catch(e){}
+  apply({polia:{}}); PRILOHY.length=0; renderPrilohy(); renderPoz();
+  document.getElementById('z_pocet2').checked=true; document.getElementById('z_rodina').value=rodina; document.getElementById('z_osoba').value=String(osoba);
+  refreshToggles(); save();
+  document.getElementById('hotovo').hidden=true; document.getElementById('btnSend').hidden=false; status('');
+  document.getElementById('s-zakladne').scrollIntoView({behavior:'smooth'});
 };
 document.getElementById('btnPdf').onclick = ()=>{ window.print(); };
 document.getElementById('btnCopy').onclick = async ()=>{ const t=summary(); try{ await navigator.clipboard.writeText(t); status('Súhrn je skopírovaný do schránky.'); }catch(e){ document.getElementById('suhrn').textContent=t; document.getElementById('suhrn').hidden=false; status('Súhrn je zobrazený nižšie – označ a skopíruj.'); } };
