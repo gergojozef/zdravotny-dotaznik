@@ -174,6 +174,10 @@ button:disabled{opacity:.6;cursor:wait}
     <div class="q"><span class="lbl">Charakter práce</span><div class="opts" data-label="Charakter práce"><label><input type="radio" name="z_char" value="prevažne kancelárska" id="z_char1">prevažne kancelárska</label><label><input type="radio" name="z_char" value="kombinovaná" id="z_char2">kombinovaná</label><label><input type="radio" name="z_char" value="manuálna" id="z_char3">manuálna</label><label><input type="radio" name="z_char" value="vo výškach / s rizikom" id="z_char4">vo výškach, s chemikáliami, strojmi, zbraňou</label></div></div>
   </div>
   <div class="grid">
+    <div class="q"><label class="lbl" for="z_prijem">Čistý mesačný príjem (€)<span class="hint">zamestnanec: čistá mzda; SZČO: priemer za posledný rok. Potrebné na správne nastavenie poistných súm – poisťovňa si ho pri vyšších sumách overuje.</span></label><input type="number" id="z_prijem" data-label="Čistý mesačný príjem (€)" min="0" step="10" inputmode="numeric"></div>
+    <div class="q"><label class="lbl" for="z_prijem_p">Iné pravidelné príjmy<span class="hint">napr. prenájom, dohody, rodičovský príspevok – suma a zdroj</span></label><input type="text" id="z_prijem_p" data-label="Iné príjmy"></div>
+  </div>
+  <div class="grid">
     <div class="q"><label class="lbl" for="z_vl">Všeobecný (praktický) lekár<span class="hint">meno a mesto ambulancie</span></label><input type="text" id="z_vl" data-label="Všeobecný lekár"></div>
     <div class="q"><label class="lbl" for="z_ol">Odborní lekári, u ktorých ste sledovaný/á za posledné 3 roky<span class="hint">odbornosť, mesto, dôvod, posledná návšteva</span></label><textarea id="z_ol" data-label="Odborní lekári (3 roky)"></textarea></div>
   </div>
@@ -661,7 +665,7 @@ function load(){ try{ const s=localStorage.getItem(LSKEY); if(s) apply(JSON.pars
 function requiredGroups(){ return [...new Set([...document.querySelectorAll('.opts.yn input[type=radio]')].filter(i=>!i.closest('[hidden]')).map(i=>i.name))]; }
 function missing(){
   const miss=[];
-  ['z_meno','z_dn','z_vyska','z_vaha','z_pov'].forEach(id=>{ const el=document.getElementById(id); if(!el.value) miss.push(el.closest('.q').querySelector('.lbl').firstChild.textContent.trim()); });
+  ['z_meno','z_dn','z_vyska','z_vaha','z_pov','z_prijem'].forEach(id=>{ const el=document.getElementById(id); if(!el.value) miss.push(el.closest('.q').querySelector('.lbl').firstChild.textContent.trim()); });
   if(!document.querySelector('input[name="z_pohl"]:checked')) miss.push('Pohlavie');
   if(!document.querySelector('input[name="z_pocet"]:checked')) miss.push('Pre koľko osôb sa poistenie dojednáva');
   if(document.getElementById('z_pocet2').checked && !document.getElementById('z_rodina').value.trim()) miss.push('Meno poistníka');
@@ -675,7 +679,7 @@ function missing(){
 }
 function progress(){
   const groups = requiredGroups(); let done = groups.filter(n=>document.querySelector(`input[name="${n}"]:checked`)).length;
-  const base = ['z_meno','z_dn','z_vyska','z_vaha','z_pov']; done += base.filter(id=>document.getElementById(id).value).length;
+  const base = ['z_meno','z_dn','z_vyska','z_vaha','z_pov','z_prijem']; done += base.filter(id=>document.getElementById(id).value).length;
   const total = groups.length + base.length; const p = Math.round(100*done/total);
   document.getElementById('pgbar').style.width = p+'%'; document.getElementById('pgtxt').textContent = `Vyplnené ${p} %`;
 }
